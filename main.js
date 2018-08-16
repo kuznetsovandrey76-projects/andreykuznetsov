@@ -1,5 +1,5 @@
-$(document).ready(function(){
-alert(1);
+// $(document).ready(function(){
+// alert(1);
 var content_films = document.querySelector(".content-films"),
 	content_audiobooks = document.querySelector(".content-audiobooks"),
 	content_courses = document.querySelector(".content-courses"),
@@ -53,9 +53,9 @@ for (var i = 0; i < data.length; i++) {
 		content_courses.innerHTML += temp;
 	} else {
 		content_books.innerHTML += temp;
+	alert(2);
 	}
 }
 
 
-alert(2);
-});
+// });
