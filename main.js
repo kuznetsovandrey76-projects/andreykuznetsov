@@ -36,6 +36,7 @@ var film1 =	new OneSectionElement("films", "Harry Potter and the Sorcerer\'s Sto
 
 (function () {
  data.push(film1);
+ alert(data[0].type);
 })()
 
 for (var i = 0; i < data.length; i++) {
