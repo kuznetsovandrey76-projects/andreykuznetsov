@@ -15,9 +15,11 @@ var OneSectionElement = function(type, name, year, link, done, period) {
 	this.period = period;
 }
 
-// data.push(
-// 	// FILMS
-// 	new OneSectionElement("films", "Harry Potter and the Sorcerer\'s Stone", 2001, "https://www.kinopoisk.ru/film/689/", true, ["summer", 2018]),
+var film1 =	new OneSectionElement("films", "Harry Potter and the Sorcerer\'s Stone", 2001, "https://www.kinopoisk.ru/film/689/", true, ["summer", 2018]);
+data.push(
+	// FILMS
+	film1
+	// new OneSectionElement("films", "Harry Potter and the Sorcerer\'s Stone", 2001, "https://www.kinopoisk.ru/film/689/", true, ["summer", 2018]),
 // 	new OneSectionElement("films", "Infinity", 1996, "https://www.kinopoisk.ru/film/4145/", true, ["summer", 2018]),
 // 	new OneSectionElement("films", "Ready Player One", 2018, "https://www.kinopoisk.ru/film/538225/", true, ["summer", 2018]),
 // 	new OneSectionElement("films", "X+Y", 2014, "https://www.kinopoisk.ru/film/794247/", true, ["summer", 2018]),
@@ -30,7 +32,7 @@ var OneSectionElement = function(type, name, year, link, done, period) {
 // 	new OneSectionElement("courses", "The Complete JavaScript Course: Build a Real-World Project", "", "https://coursehunters.net/course/udemy-complete-javascript-course", false, ["summer", 2018]),
 // 	// BOOKS
 // 	new OneSectionElement("books", "Я. И. Перельман: Математика для любознательных", "", "", false, ["summer", 2018]),
-// 	);
+	);
 
 
 for (var i = 0; i < data.length; i++) {
