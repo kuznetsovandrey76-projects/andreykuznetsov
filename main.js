@@ -15,34 +15,29 @@ var OneSectionElement = function(type, name, year, link, done, period) {
 	this.period = period;
 }
 
-var film1 =	new OneSectionElement("films", "Harry Potter and the Sorcerer\'s Stone", 2001, "https://www.kinopoisk.ru/film/689/", true, ["summer", 2018]);
-// data.push(
-	// FILMS
-	// film1
-	// new OneSectionElement("films", "Harry Potter and the Sorcerer\'s Stone", 2001, "https://www.kinopoisk.ru/film/689/", true, ["summer", 2018]),
-// 	new OneSectionElement("films", "Infinity", 1996, "https://www.kinopoisk.ru/film/4145/", true, ["summer", 2018]),
-// 	new OneSectionElement("films", "Ready Player One", 2018, "https://www.kinopoisk.ru/film/538225/", true, ["summer", 2018]),
-// 	new OneSectionElement("films", "X+Y", 2014, "https://www.kinopoisk.ru/film/794247/", true, ["summer", 2018]),
-// 	new OneSectionElement("films", "Pollyanna", 2003, "https://www.kinopoisk.ru/film/pollianna-2003-332348/", true, ["summer", 2018]),
-// 	// AUDIOBOOKS
-// 	new OneSectionElement("audiobooks", "Stephen William Hawking: A Briefer History of Time", "", "https://audioknigi.club/hoking-kratkaya-istoriya-vremeni-ot-bolshogo-vzryva-do-chernyh-dyr-bigbag", false, ["summer", 2018]),
-// 	new OneSectionElement("audiobooks", "Surely You're Joking, Mr. Feynman!", "", "https://book-audio.com/47:feinman-richard-vy-konechno-shutite-mister-feinman", true, ["summer", 2018]),
-// 	new OneSectionElement("audiobooks", "Братья Стругацкие: Понедельник начинается в субботу", 1965, "https://audioknigi.club/strugackie-arkadiy-i-boris-ponedelnik-nachinaetsya-v-subbotu", true, ["summer", 2018]),
-// 	// COURSES
-// 	new OneSectionElement("courses", "The Complete JavaScript Course: Build a Real-World Project", "", "https://coursehunters.net/course/udemy-complete-javascript-course", false, ["summer", 2018]),
-// 	// BOOKS
-// 	new OneSectionElement("books", "Я. И. Перельман: Математика для любознательных", "", "", false, ["summer", 2018]),
-	// );
+// FILMS
+var film5 =	new OneSectionElement("films", "Harry Potter and the Sorcerer\'s Stone", 2001, "https://www.kinopoisk.ru/film/689/", true, ["summer", 2018]);
+var film4 = new OneSectionElement("films", "Infinity", 1996, "https://www.kinopoisk.ru/film/4145/", true, ["summer", 2018]);
+var film3 = new OneSectionElement("films", "Ready Player One", 2018, "https://www.kinopoisk.ru/film/538225/", true, ["summer", 2018]);
+var film2 = new OneSectionElement("films", "X+Y", 2014, "https://www.kinopoisk.ru/film/794247/", true, ["summer", 2018]);
+var film1 = new OneSectionElement("films", "Pollyanna", 2003, "https://www.kinopoisk.ru/film/pollianna-2003-332348/", true, ["summer", 2018]);
+// AUDIOBOOKS
+var audiobooks3 = new OneSectionElement("audiobooks", "Stephen William Hawking: A Briefer History of Time", "", "https://audioknigi.club/hoking-kratkaya-istoriya-vremeni-ot-bolshogo-vzryva-do-chernyh-dyr-bigbag", false, ["summer", 2018]);
+var audiobooks2 = new OneSectionElement("audiobooks", "Surely You're Joking, Mr. Feynman!", "", "https://book-audio.com/47:feinman-richard-vy-konechno-shutite-mister-feinman", true, ["summer", 2018]);
+var audiobooks1 = new OneSectionElement("audiobooks", "Братья Стругацкие: Понедельник начинается в субботу", 1965, "https://audioknigi.club/strugackie-arkadiy-i-boris-ponedelnik-nachinaetsya-v-subbotu", true, ["summer", 2018]);
+// COURSES
+var courses1 = new OneSectionElement("courses", "The Complete JavaScript Course: Build a Real-World Project", "", "https://coursehunters.net/course/udemy-complete-javascript-course", false, ["summer", 2018]);
+// BOOKS
+var books1 = new OneSectionElement("books", "Я. И. Перельман: Математика для любознательных", "", "", false, ["summer", 2018]);
 
+// Fix for Mobile
 (function () {
-data.push(
-	// FILMS
-	film1
-	// new OneSectionElement("films", "Harry Potter and the Sorcerer\'s Stone", 2001, "https://www.kinopoisk.ru/film/689/", true, ["summer", 2018]),
-	// new OneSectionElement("films", "Infinity", 1996, "https://www.kinopoisk.ru/film/4145/", true, ["summer", 2018]),
- // data.push(film1);
- // alert(data[0].type);
- );
+	data.push(
+		film5, film4, film3,film2, film1,
+		audiobooks3, audiobooks2, audiobooks1,
+		courses1,
+		books1  
+	);
 })()
 
 for (var i = 0; i < data.length; i++) {
