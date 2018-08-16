@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	font-family: Tahoma;
+}
+
+a {
+	text-decoration: none;
+	color: darkred;
+}
+.content {
+	margin: 0 5px;
+}
+.content div {
+	margin: 2px;
+	padding: 2px;
+}
+.content-films {
+	/*background: lightgreen;*/
+}
+
+.content-audiobooks {
+	background: ;
+}
+
+.content-courses {
+	background: ;
+}
+
+.content-books {
+	background: ;
+}
+
+.content-element {
+	padding: 0 2px;
+	margin: 2px 0;	
+}
+
+.completed {
+	border-left: 5px solid green;
+	background: lightgreen;
+}
+
+.not-completed {
+	border-left: 5px solid goldenrod;
+	background: khaki;
+}
+
+.year {
+	margin: 0 3px;
+	font-size: xx-small;
+}
