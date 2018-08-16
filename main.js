@@ -35,8 +35,13 @@ var film1 =	new OneSectionElement("films", "Harry Potter and the Sorcerer\'s Sto
 	// );
 
 (function () {
- data.push(film1);
- alert(data[0].type);
+data.push(
+	// FILMS
+	new OneSectionElement("films", "Harry Potter and the Sorcerer\'s Stone", 2001, "https://www.kinopoisk.ru/film/689/", true, ["summer", 2018]),
+	new OneSectionElement("films", "Infinity", 1996, "https://www.kinopoisk.ru/film/4145/", true, ["summer", 2018]),
+ // data.push(film1);
+ // alert(data[0].type);
+ );
 })()
 
 for (var i = 0; i < data.length; i++) {
