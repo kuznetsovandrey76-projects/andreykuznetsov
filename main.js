@@ -16,9 +16,9 @@ var OneSectionElement = function(type, name, year, link, done, period) {
 }
 
 var film1 =	new OneSectionElement("films", "Harry Potter and the Sorcerer\'s Stone", 2001, "https://www.kinopoisk.ru/film/689/", true, ["summer", 2018]);
-data.push(
+// data.push(
 	// FILMS
-	film1
+	// film1
 	// new OneSectionElement("films", "Harry Potter and the Sorcerer\'s Stone", 2001, "https://www.kinopoisk.ru/film/689/", true, ["summer", 2018]),
 // 	new OneSectionElement("films", "Infinity", 1996, "https://www.kinopoisk.ru/film/4145/", true, ["summer", 2018]),
 // 	new OneSectionElement("films", "Ready Player One", 2018, "https://www.kinopoisk.ru/film/538225/", true, ["summer", 2018]),
@@ -32,8 +32,11 @@ data.push(
 // 	new OneSectionElement("courses", "The Complete JavaScript Course: Build a Real-World Project", "", "https://coursehunters.net/course/udemy-complete-javascript-course", false, ["summer", 2018]),
 // 	// BOOKS
 // 	new OneSectionElement("books", "Я. И. Перельман: Математика для любознательных", "", "", false, ["summer", 2018]),
-	);
+	// );
 
+(function () {
+ data.push(film1);
+})()
 
 for (var i = 0; i < data.length; i++) {
 
@@ -57,5 +60,5 @@ for (var i = 0; i < data.length; i++) {
 	}
 }
 
-	alert("test");
+	// alert("test");
 
