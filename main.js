@@ -26,8 +26,10 @@ var audiobooks3 = new OneSectionElement("audiobooks", "Stephen William Hawking: 
 var audiobooks2 = new OneSectionElement("audiobooks", "Surely You're Joking, Mr. Feynman!", "", "https://book-audio.com/47:feinman-richard-vy-konechno-shutite-mister-feinman", true, ["summer", 2018]);
 var audiobooks1 = new OneSectionElement("audiobooks", "Братья Стругацкие: Понедельник начинается в субботу", 1965, "https://audioknigi.club/strugackie-arkadiy-i-boris-ponedelnik-nachinaetsya-v-subbotu", true, ["summer", 2018]);
 // COURSES
+var courses1 = new OneSectionElement("courses", "English Galaxy", "", "https://www.youtube.com/playlist?list=PLTj1fjYSNC_rtCsA7tpZ-uQ3QH50E8HxW", false, ["summer", 2018]);
 var courses1 = new OneSectionElement("courses", "The Complete JavaScript Course: Build a Real-World Project", "", "https://coursehunters.net/course/udemy-complete-javascript-course", false, ["summer", 2018]);
 // BOOKS
+var books1 = new OneSectionElement("books", "Барбара Оакли: Думай как математик", 2015, "", false, ["summer", 2018]);
 var books1 = new OneSectionElement("books", "Я. И. Перельман: Математика для любознательных", "", "", false, ["summer", 2018]);
 
 // Fix for Mobile
