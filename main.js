@@ -16,6 +16,7 @@ var OneSectionElement = function(type, name, year, link, done, period) {
 }
 
 // FILMS
+var film6 =	new OneSectionElement("films", "Я и другие", 1971, "https://www.youtube.com/watch?v=_LYe58b-3HM&t=626s", true, ["summer", 2018]);
 var film5 =	new OneSectionElement("films", "Harry Potter and the Sorcerer\'s Stone", 2001, "https://www.kinopoisk.ru/film/689/", true, ["summer", 2018]);
 var film4 = new OneSectionElement("films", "Infinity", 1996, "https://www.kinopoisk.ru/film/4145/", true, ["summer", 2018]);
 var film3 = new OneSectionElement("films", "Ready Player One", 2018, "https://www.kinopoisk.ru/film/538225/", true, ["summer", 2018]);
@@ -35,7 +36,7 @@ var books1 = new OneSectionElement("books", "Я. И. Перельман: Мат�
 // Fix for Mobile
 (function () {
 	data.push(
-		film5, film4, film3,film2, film1,
+		film6, film5, film4, film3,film2, film1,
 		audiobooks3, audiobooks2, audiobooks1,
 		courses2, courses1,
 		books2, books1  
