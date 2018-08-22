@@ -66,8 +66,10 @@ for (let i = 0; i < data.length; i++) {
 }
 
 
+var test = document.getElementById('test');
+test.addEventListener('click', load);
+test.innerHTML = 'Hi';
 
-document.getElementById('test').addEventListener('click', load);
 
 function load() {
 	var xhr = new XMLHttpRequest();
@@ -76,7 +78,7 @@ function load() {
 	xhr.onload = function() {
 		if (this.status == 200) {
 			console.log(this.responseText);	
-			document.getElementById('test').innerHTML = this.responseText;		
+			test.innerHTML = this.responseText;		
 		}
 	}
 	xhr.send();
