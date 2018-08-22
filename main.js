@@ -51,7 +51,7 @@ for (var i = 0; i < data.length; i++) {
 	var done = data[i].done ? "completed" : "not-completed";
 
 	// Компануем в один параграф 
-	var temp = "<p class='content-element " + done + "'><a href='"+ link + "'>" + name + "</a>" + year + "</p>";
+	var temp = `<p class='content-element ${done}'><a href='${link}'>${name}</a>${year}</p>`;
 
 	// Распределение по разделам
 	if (data[i].type == "films") {
