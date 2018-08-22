@@ -66,3 +66,17 @@ for (let i = 0; i < data.length; i++) {
 }
 
 
+
+document.getElementById('test').addEventListener('click', load);
+
+function load() {
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', 'data.txt', true);
+
+	xhr.onload = function() {
+		if (this.status == 200) {
+			console.log(this.responseText);			
+		}
+	}
+	xhr.send();
+}
