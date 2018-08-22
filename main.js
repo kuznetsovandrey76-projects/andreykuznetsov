@@ -75,7 +75,8 @@ function load() {
 
 	xhr.onload = function() {
 		if (this.status == 200) {
-			console.log(this.responseText);			
+			console.log(this.responseText);	
+			document.getElementById('test').innerHTML = this.responseText;		
 		}
 	}
 	xhr.send();
