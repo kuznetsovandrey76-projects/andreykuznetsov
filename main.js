@@ -14,7 +14,6 @@ let OneSectionElement = function(type, name, year, link, done, period) {
 	this.period = period;
 }
 
-								  // type, 	  name, 	   year, link, 												   done, period 		 ?comment	
 // FILMS
 const film6 = new OneSectionElement("films", "Я и другие", 1971, "https://www.youtube.com/watch?v=_LYe58b-3HM&t=626s", true, ["summer", 2018]);
 const film5 = new OneSectionElement("films", "Harry Potter and the Sorcerer\'s Stone", 2001, "https://www.kinopoisk.ru/film/689/", true, ["summer", 2018]);
@@ -66,20 +65,67 @@ for (let i = 0; i < data.length; i++) {
 }
 
 
-var test = document.getElementById('test');
-test.addEventListener('click', load);
-test.innerHTML = 'Hi';
 
+// AJAX
+let greeting = document.getElementById('greeting');
+greeting.addEventListener('click', load);
 
 function load() {
-	var xhr = new XMLHttpRequest();
-	xhr.open('GET', 'data.txt', true);
+	let xhr = new XMLHttpRequest();
+	xhr.open('GET', 'greeting.txt', true);
 
 	xhr.onload = function() {
 		if (this.status == 200) {
-			console.log(this.responseText);	
-			test.innerHTML = this.responseText;		
+			greeting.innerHTML = this.responseText;		
 		}
 	}
 	xhr.send();
 }
+
+
+// Module Pattern
+let DataModule = (function(){
+	let data = [];
+
+	return {
+		add: function(element) {
+			data.push(element);
+		},
+		show: function() {
+			return data;
+		}
+	}
+}());
+
+
+
+const el1 = {
+	id: 1,
+	type: 'film',
+	name: 'Я и другие',
+	year: 1971,
+	link: 'https://www.youtube.com/watch?v=_LYe58b-3HM',
+	progress: 'done',
+	finish: {
+		year: 2018,
+		season: 'summer'
+	}
+};
+const el2 = {
+	id: 2,
+	type: 'film',
+	name: 'Harry Potter and the Sorcerer\'s Stone',
+	year: 2001,
+	link: 'https://www.kinopoisk.ru/film/689/',
+	progress: 'done',
+	finish: {
+		year: 2018,
+		season: 'summer'
+	}
+};
+
+
+DataModule.add(el1);
+DataModule.add(el2);
+var x = DataModule.show();
+console.log(x);
