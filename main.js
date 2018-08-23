@@ -99,33 +99,13 @@ let DataModule = (function(){
 
 
 
-const el1 = {
-	id: 1,
-	type: 'film',
-	name: 'Я и другие',
-	year: 1971,
-	link: 'https://www.youtube.com/watch?v=_LYe58b-3HM',
-	progress: 'done',
-	finish: {
-		year: 2018,
-		season: 'summer'
-	}
-};
+const el1 = { id: 1, type: 'film', year: 1971, link: 'https://clck.ru/EB7BC', progress: 'done',
+			finishYear: 2018, finishMonth: 8, name: 'Я и другие' };
 
-const el2 = {
-	id: 2,
-	type: 'film',
-	name: 'Harry Potter and the Sorcerer\'s Stone',
-	year: 2001,
-	link: 'https://www.kinopoisk.ru/film/689/',
-	progress: 'done',
-	finish: {
-		year: 2018,
-		season: 'summer'
-	}
-};
+const el2 = { id: 2, type: 'film', year: 2001, link: 'https://clck.ru/EB79a', progress: 'done', 
+			finishYear: 2018, finishMonth: 8, name: 'Harry Potter and the Sorcerer\'s Stone' };
 
 DataModule.add(el1);
 DataModule.add(el2);
 var x = DataModule.show();
-console.log(x);
+console.table(x);
