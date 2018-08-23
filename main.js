@@ -67,63 +67,63 @@ for (let i = 0; i < data.length; i++) {
 
 
 // AJAX
-let greeting = document.getElementById('greeting');
-greeting.addEventListener('click', load);
+// let greeting = document.getElementById('greeting');
+// greeting.addEventListener('click', load);
 
-function load() {
-	let xhr = new XMLHttpRequest();
-	xhr.open('GET', 'greeting.txt', true);
+// function load() {
+// 	let xhr = new XMLHttpRequest();
+// 	xhr.open('GET', 'greeting.txt', true);
 
-	xhr.onload = function() {
-		if (this.status == 200) {
-			greeting.innerHTML = this.responseText;		
-		}
-	}
-	xhr.send();
-}
+// 	xhr.onload = function() {
+// 		if (this.status == 200) {
+// 			greeting.innerHTML = this.responseText;		
+// 		}
+// 	}
+// 	xhr.send();
+// }
 
 
 // Module Pattern
-let DataModule = (function(){
-	let data = [];
+// let DataModule = (function(){
+// 	let data = [];
 
-	return {
-		add: function(element) {
-			data.push(element);
-		},
-		show: function() {
-			return data;
-		}
-	}
-}());
+// 	return {
+// 		add: function(element) {
+// 			data.push(element);
+// 		},
+// 		show: function() {
+// 			return data;
+// 		}
+// 	}
+// }());
 
 
 
-const el1 = {
-	id: 1,
-	type: 'film',
-	name: 'Я и другие',
-	year: 1971,
-	link: 'https://www.youtube.com/watch?v=_LYe58b-3HM',
-	progress: 'done',
-	finish: {
-		year: 2018,
-		season: 'summer'
-	}
-};
+// const el1 = {
+// 	id: 1,
+// 	type: 'film',
+// 	name: 'Я и другие',
+// 	year: 1971,
+// 	link: 'https://www.youtube.com/watch?v=_LYe58b-3HM',
+// 	progress: 'done',
+// 	finish: {
+// 		year: 2018,
+// 		season: 'summer'
+// 	}
+// };
 
-const el2 = {
-	id: 2,
-	type: 'film',
-	name: 'Harry Potter and the Sorcerer\'s Stone',
-	year: 2001,
-	link: 'https://www.kinopoisk.ru/film/689/',
-	progress: 'done',
-	finish: {
-		year: 2018,
-		season: 'summer'
-	}
-};
+// const el2 = {
+// 	id: 2,
+// 	type: 'film',
+// 	name: 'Harry Potter and the Sorcerer\'s Stone',
+// 	year: 2001,
+// 	link: 'https://www.kinopoisk.ru/film/689/',
+// 	progress: 'done',
+// 	finish: {
+// 		year: 2018,
+// 		season: 'summer'
+// 	}
+// };
 
 // DataModule.add(el1);
 // DataModule.add(el2);
