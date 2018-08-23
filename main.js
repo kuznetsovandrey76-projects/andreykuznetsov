@@ -111,6 +111,7 @@ const el1 = {
 		season: 'summer'
 	}
 };
+
 const el2 = {
 	id: 2,
 	type: 'film',
@@ -124,8 +125,7 @@ const el2 = {
 	}
 };
 
-
-DataModule.add(el1);
-DataModule.add(el2);
-var x = DataModule.show();
-console.log(x);
+// DataModule.add(el1);
+// DataModule.add(el2);
+// var x = DataModule.show();
+// console.log(x);
