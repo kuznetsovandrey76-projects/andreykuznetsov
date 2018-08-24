@@ -35,14 +35,19 @@ a {
 	margin: 2px 0;	
 }
 
-.completed {
+.done {
 	border-left: 5px solid green;
 	background: lightgreen;
 }
 
-.not-completed {
+.in-progress {
 	border-left: 5px solid goldenrod;
 	background: khaki;
+}
+
+.stop {
+	border-left: 5px solid red;
+	background: lightpink;
 }
 
 .year {
