@@ -1,4 +1,4 @@
-let data = [
+var data = [
 // { id: , type: '', year: , link: '', progress: '', finishYear: 2018, finishMonth: 8, name: '' },
 { id: 16, type: 'course', year: '', link: 'https://clck.ru/EDp2H', progress: 'in-progress', 
 finishYear: 2018, finishMonth: 8, name: 'The Coding Interview Bootcamp: Algorithms + Data Structures' },

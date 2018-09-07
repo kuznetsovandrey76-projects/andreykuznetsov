@@ -1,21 +1,21 @@
 "use strict";
 
-let content_films = document.querySelector(".content-films"),
+var content_films = document.querySelector(".content-films"),
 	content_audiobooks = document.querySelector(".content-audiobooks"),
 	content_courses = document.querySelector(".content-courses"),
 	content_books = document.querySelector(".content-books");
 
 
 
-for (let i = 0; i < data.length; i++) {
+for (var i = 0; i < data.length; i++) {
 
-	let name = data[i].name;
-	let year = data[i].year ? `<span class='year'>${data[i].year}</span>` : "";
-	let link = data[i].link ? data[i].link : "#";
-	let progress = data[i].progress;
+	var name = data[i].name;
+	var year = data[i].year ? "<span class='year'>" + data[i].year + "</span>" : "";
+	var link = data[i].link ? data[i].link : "#";
+	var progress = data[i].progress;
 
 	// Компануем в один параграф 
-	let temp = `<p class='content-element ${progress}'><a href='${link}'>${name}</a>${year}</p>`;
+	var temp = "<p class='content-element " + progress + "'><a href='" + link + "'>" + name + "</a>" + year + "</p>";
 
 	// Распределение по разделам
 	if (data[i].type == "film") {
@@ -31,11 +31,11 @@ for (let i = 0; i < data.length; i++) {
 
 // TEST
 // AJAX
-let greeting = document.getElementById('greeting');
+var greeting = document.getElementById('greeting');
 greeting.addEventListener('click', load);
 
 function load() {
-	let xhr = new XMLHttpRequest();
+	var xhr = new XMLHttpRequest();
 	xhr.open('GET', 'greeting.txt', true);
 
 	xhr.onload = function() {
@@ -47,8 +47,8 @@ function load() {
 }
 
 // Module Pattern
-let DataModule = (function(){
-	let data = [];
+var DataModule = (function(){
+	var data = [];
 
 	return {
 		add: function(element) {
