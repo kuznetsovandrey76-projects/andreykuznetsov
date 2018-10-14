@@ -1,5 +1,7 @@
 var data = [
 // { id: , type: '', year: , link: '', progress: '', finishYear: 2018, finishMonth: 8, name: '' },
+{ id: 19, type: 'audiobook', year: 1927, link: 'https://audioknigi.club/gesse-german-stepnoy-volk', progress: 'in-progress', 
+	finishYear: 2018, finishMonth: 10, name: 'Герман Гессе: Степной волк' },
 { id: 18, type: 'book', year: 2011, link: '', progress: 'in-progress', 
 	finishYear: 2018, finishMonth: 9, name: 'Coders at Work: Reflections on the Craft of Programming' },
 { id: 17, type: 'film', year: 2008, link: 'https://clck.ru/EKy6B', progress: 'in-progress', 
